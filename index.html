@@ -1,0 +1,930 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>morip </title>
+	<meta charset='utf-8'>	
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale:1.0, maximum-scale=1.6'>
+	<meta name='format-decection' content='telephone=no'>
+	<meta name='Title' content='morip '>
+	<meta name='Subject' content='morip '>
+	<meta name='Publisher' content='최은희'>
+	<meta name='Location' content='Seoul Korea'>
+	<meta name='Author' content='morip '>
+	<meta name='Author-Date' content='2020-02-15'>
+	<meta name='Copyright' content='morip '>
+	<meta name='Description' content='morip '>
+	<meta name='Keywords' content='morip '>
+	<meta name='Classification' content='morip '>
+	<meta name='Robots' content='index,follow'>
+	
+<!-- 	<link rel='shortcut icon' href=''>
+	<link rel='apple-touch-icon' href=''> -->
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">		
+	<link rel="stylesheet" type='text/css' href="css/font-awesome.min.css">	
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css'>
+	<link rel='stylesheet' type='text/css' href='css/response.css'>
+	
+	
+	<!-- 제공받은 자바스크립트 라이브러리 프로그램 - 오픈소스 -->
+	<script src='js/lib/jquery-1.12.4.min.js'></script>
+	<script src='js/lib/jquery.touchSwipe.js'></script> <!-- css slide에 transition 없애야 자동된다.-->
+	<script src='js/lib/jquery.easing.1.3.js'></script>
+			
+	
+	<!-- 사용자 js -->
+	<script src='js/header.js'></script>
+<!-- 	<script src='js/mainSlide.js'></script> -->
+<!-- 	<script src='js/mainSlideRolling.js'></script> -->
+	<script src='js/mainSlideRollResponse.js'></script> 
+	<script src='js/gallery.js'></script> 
+	<script src='js/sec3SlideResize.js'></script> 
+	<script src='js/sec3Slide.js'></script> 
+	<script src='js/sec4Slide.js'></script> 
+	
+	
+	
+	
+</head>
+<body>
+<div id='wrap'>
+
+	<ul id="skip">
+		<li><a href="#header">메뉴바로가기</a></li>
+		<li><a href="#main">메인바로가기</a></li>
+		<li><a href="#footer">하단바로가기</a></li>
+	</ul>
+	
+	<header id="header" >
+		<div class="fixedclear">
+			<h1 class="logoBtn-wrap">
+				<a href="index.html" class="logoBtn" title="logo"><img src="img/f_logo.png" alt="f_logo"><img src="img/logo_color.png" alt="f_logo"></a>			
+			</h1>
+			<div class="header-left">
+				<a href="#" class="appBarBtn" Title="appBarBtn">
+					<span class="appBarBtn-line-wrap">
+						<i class='appBarBtn-line appBarBtn-line1'></i>
+						<i class='appBarBtn-line appBarBtn-line2'></i>
+						<i class='appBarBtn-line appBarBtn-line3'></i>
+					</span>		
+					
+					<span class="abbBarBtn-Text">
+						Menu
+					</span>
+				</a>
+			</div>
+			<div class="header-right">
+				<span>
+					<a href="#" title="About Us" class="asideBtn link1">About Us</a>					
+				</span>
+				
+				<span>
+					<a href="#" title="Plan Your Stay" class="asideBtn">Plan Your Stay
+						<i class="fas fa-angle-right"></i>
+					</a>					
+				</span>
+				<span>	
+					<a href="#" title="호텔문의" class="asideBtn link2">호텔<br>문의</a>
+				</span>
+			</div>
+		</div>
+	</header>
+	<!-- #헤더 -->
+	
+	<main id="main">
+		<section id="section1">
+			<div>
+				<div class='section1-mainSlide-container'>
+					
+					<!-- z-index:1 메인슬라이드 박스 -->
+					<div class="section1-mainSlide-view">
+						<ul class="section1-mainSlide-wrap fixedclear"><!-- 메인슬라이드 가로로3개 -->
+							<li class="mainSlide mainSlide2"></li>
+							<li class="mainSlide mainSlide0"></li>
+							<li class="mainSlide mainSlide1"></li>
+							<li class="mainSlide mainSlide2"></li>
+							<li class="mainSlide mainSlide0"></li>
+						</ul>
+					</div>
+					
+					<!-- z-index:2 Next /Prev Btn -->
+					<span class="mainSlide-NextBtn-wrap"><a href="javascript:void(0);" title="slide Next" class="mainNextBtn timerControl"><img src="img/visu_slick_next.png" alt="slide NextBtn"></a></span>
+					<span class="mainSlide-PrevBtn-wrap"><a href="javascript:void(0);" title="slide Prev" class="mainPrevBtn timerControl"><img src="img/visu_slick_prev.png" alt="slide PrevBtn"></a></span>
+					
+					<!-- z-index:2 main Slide Title -->
+					<div class="mainSlide-Title">
+						<h3>Your Luxury Travel Lounge</h3>
+						<h2>MORe than trIP. morip</h2>
+					</div>
+					
+					<!--  z-index:2 mainSlide Pagenation -->
+					<ul class="mainSlide-pageBtn-wrap timerControl">
+						<li><a href="javascript:void(0);" title="page1"  class="pageBtn blind addPageBtn">page1</a></li>
+						<li><a href="javascript:void(0);" title="page2"  class="pageBtn blind">page2</a></li>
+						<li><a href="javascript:void(0);" title="page3"  class="pageBtn blind">page3</a></li>
+					</ul>
+					
+					<!-- z-index:2 Next Section Smooth Scrolling Btn -->
+					<div class="nextSmoothScrollBtn-wrap">
+						<a href="javascript:void(0);" title="Next Smooth Scroll" class="nextSmoothScrollBtn">
+							<span>SCROLL TO DISCOVER MORE</span>							
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		
+		
+		<!-- #section1 -->
+		<section id="section2">
+			<div>
+		
+				<div class="section2-title">
+					<h2>morip Collection</h2>
+				</div>	
+				
+				<div class="section2-gallery">
+					<ul class="section2-gallery-wrap fixedclear">
+						<li>
+							<div>
+								<a href="javascript:" title="logo va_wrap" class="galleryBtn">
+									<img src="img/collection_img1.jpg" alt="img1">
+									<span class="galleryImgTitleBg  "></span>
+									<span class="galleryImgTitle"  >
+										<img src="img/collection_logo1.png" alt="Traveller made">
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="javascript:" class="galleryBtn">
+									<img src="img/collection_img2.jpg" alt="img2">
+									<span class="galleryImgTitleBg"></span>
+									<span class="galleryImgTitle">
+										<img src="img/collection_logo2.png" alt="Dorchester Collection">
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="javascript:" class="galleryBtn">
+									<img src="img/collection_img3.jpg" alt="img3">
+									<span class="galleryImgTitleBg"></span>
+									<span class="galleryImgTitle"  >
+										<img src="img/collection_logo3.png" alt="The Penisula Hotel">
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="javascript:" class="galleryBtn">
+									<img src="img/collection_img4.jpg" alt="img4">
+									<span class="galleryImgTitleBg"></span>
+									<span class="galleryImgTitle"  >
+										<img src="img/collection_logo4.png" alt="Alila">
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="javascript:" class="galleryBtn">
+									<img src="img/collection_img5.jpg" alt="img5">
+									<span class="galleryImgTitleBg"></span>
+									<span class="galleryImgTitle"  >
+										<img src="img/collection_logo5.png" alt="Oetker Collection">
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="javascript:" class="galleryBtn">
+									<img src="img/collection_img6.jpg" alt="img6">
+									<span class="galleryImgTitleBg"></span>
+									<span class="galleryImgTitle"  >
+										<img src="img/collection_logo6.png" alt="Six Sense">
+									</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>		
+			</div>
+		</section>
+		<!-- #section2 -->
+			
+			<section id="section3">
+				<div>
+					<div>
+					<div class="section3-title">
+						<h2>morip Korea</h2>
+					</div>	
+					
+					<div class="section3-Slide-containt" >	
+					<!-- ////////    슬라이드 원본					
+						<div class="section3-Slide-container-1200" >
+							<ul class="section3-Slide-wrap fixedclear">
+								
+								<li class="section3-Slide-left-wrap">
+									<div>
+										<div class="section3-slide-bgimg">
+											
+										</div>
+									</div>
+								
+								</li>
+								
+								<li class="section3-Slide-right-wrap">
+									<div class="section3-Slide-right-text-wrap">
+										<div class="section3-slide-text">
+											<h2><a href="#" >Dive into Korean History at Gyeongju</a></h2>
+											<p> 
+												Dive into Korean History at Gyeongju
+												Known as ‘the museum without walls’, Gyeongju holds more tombs, temples, rock carvings, pagodas, Buddhist statuary and palace ruins than any other place in Korea being located in Gyeongsang Province, ...
+											</p>
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+							
+							<ul class="section3-Slide-foot-wrap">
+							
+								<li>
+									<div>
+										<div class="section3-Slide2-foot-Bgimg">
+											
+										</div>
+									</div>
+								</li>
+								
+								<li>
+									<div>
+										<div class="section3-Slide3-foot-Bgimg">
+											
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+							
+						</div> //////// #슬라이드 원본 -->
+						
+						
+						<!-- ////// -->
+					 				
+						<div class="section3-Slide-container-1200 sec3Slide sec3Slide0" >
+							<ul class="section3-Slide-wrap fixedclear">
+								 
+								<li class="section3-Slide-left-wrap">
+									<div>
+										<div class="section3-slide-bgimg">
+											
+										</div>
+									</div>
+								
+								</li>
+								
+								<li class="section3-Slide-right-wrap">
+									<div class="section3-Slide-right-text-wrap">
+										<div class="section3-slide-text">
+											<h2><a href="#" >Dive into Korean History at Gyeongju</a></h2>
+											<p> 
+												Dive into Korean History at Gyeongju
+												Known as ‘the museum without walls’, Gyeongju holds more tombs, temples, rock carvings, pagodas, Buddhist statuary and palace ruins than any other place in Korea being located in Gyeongsang Province, ...
+											</p>
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+							
+							<ul class="section3-Slide-foot-wrap">
+							
+								<li>
+									<div>
+										<div class="section3-Slide2-foot-Bgimg imgBtn1 ">
+											
+										</div>
+									</div>
+								</li>
+								
+								<li>
+									<div>
+										<div class="section3-Slide3-foot-Bgimg imgBtn2">
+											
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+							
+						</div> 
+						<!-- // #슬라이드1 첫번째 -->
+						
+						<!-- ////// 슬라이드1 두번째-->
+					 				
+						<div class="section3-Slide-container-1200 sec3Slide sec3Slide1" >
+							<ul class="section3-Slide-wrap fixedclear">
+								 
+								<li class="section3-Slide-left-wrap">
+									<div>
+										<div class="section3-slide-bgimg">
+											
+										</div>
+									</div>
+								
+								</li>
+								
+								<li class="section3-Slide-right-wrap">
+									<div class="section3-Slide-right-text-wrap">
+										<div class="section3-slide-text">
+											<h2><a href="#" >Dive into Korean History at Gyeongju</a></h2>
+											<p> 
+												Dive into Korean History at Gyeongju
+												Known as ‘the museum without walls’, Gyeongju holds more tombs, temples, rock carvings, pagodas, Buddhist statuary and palace ruins than any other place in Korea being located in Gyeongsang Province, ...
+											</p>
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+							
+							<ul class="section3-Slide-foot-wrap">
+							
+								<li>
+									<div>
+										<div class="section3-Slide2-foot-Bgimg imgBtn0">
+											
+										</div>
+									</div>
+								</li>
+								
+								<li>
+									<div>
+										<div class="section3-Slide3-foot-Bgimg imgBtn2">
+											
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+							
+						</div> 
+						<!-- // # 슬라이드1 두번째 -->
+						
+						<!-- ////// 슬라이드1 세번째-->
+					 				
+						<div class="section3-Slide-container-1200 sec3Slide sec3Slide2" >
+							<ul class="section3-Slide-wrap fixedclear">
+								 
+								<li class="section3-Slide-left-wrap">
+									<div>
+										<div class="section3-slide-bgimg">
+											
+										</div>
+									</div>
+								
+								</li>
+								
+								<li class="section3-Slide-right-wrap">
+									<div class="section3-Slide-right-text-wrap">
+										<div class="section3-slide-text">
+											<h2><a href="#" >Dive into Korean History at Gyeongju</a></h2>
+											<p> 
+												Dive into Korean History at Gyeongju
+												Known as ‘the museum without walls’, Gyeongju holds more tombs, temples, rock carvings, pagodas, Buddhist statuary and palace ruins than any other place in Korea being located in Gyeongsang Province, ...
+											</p>
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+							
+							<ul class="section3-Slide-foot-wrap">
+							
+								<li>
+									<div>
+										<div class="section3-Slide2-foot-Bgimg imgBtn1">
+											
+										</div>
+									</div>
+								</li>
+								
+								<li>
+									<div>
+										<div class="section3-Slide3-foot-Bgimg imgBtn0">
+											
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+							
+						</div> 
+						<!-- //#슬라이드1 세번째 -->
+						
+						
+						<!-- 좌우 화살버튼 -->
+						<ul class="sec3-prevBt-nextBt-wrap" >
+							<li><a href="javascript:" class="sec3PrevBtn"><img src="img/visu_slick_prev.png" alt="visu_slick_prev"></a></li>
+							<li><a href="javascript:" class="sec3NextBtn"><img src="img/visu_slick_next.png" alt="visu_slick_next"></a></li>
+						</ul>
+						
+					</div>
+				</div>	
+			</div>
+		</section>
+		<!-- #section3 -->
+		<section id="section4"> <!-- width:100%; padding:120 0; background:#f6f6f6; -->
+			<div class="section4-wrap"> <!-- width:1580px;  margin:0 auto; -->
+				<div> <!-- margin:0 5 슬라이드사이간격에서 20  -->					
+					<div class="section4-container"> <!-- width:100%;(1570px margin 때문) height:480px(임시)-->
+						<!-- 타이틀박스 -->
+						<div class="section4-title">
+							<h2>Travel Lounge</h2>
+							<h3>Please write down your beautiful memories</h3>
+						</div>
+						
+						<!-- M:HTML5  V:CSS3  C:JAVASCRIPT -->
+						
+						<!-- 섹션4 슬라이드박스 -->
+						<div class="section4-slide-container">
+							<div class="section4-slide-view">	<!-- 1570px/3 (칸수) = 슬라이드1개 너비 -->
+								<ul class="section4-slide-wrap fixedclear"> 	<!-- 슬라이드 1너비 (523.3333333)*12 = 슬라이드전체너비 애니메이션 -->
+									<li class="sec4Slide sec4Slide3"> 	<!-- 슬라이드1개 너비 * 높이비율 = 슬라이드높이 -->
+										<div> <!-- margin:0 20  height:100%; width:auto;-->
+											<div class="sec4Slide-content">  <!-- height:100%; width:100%; -->
+												<a href="javascript:" class="sec4SlideBt">
+													<span> <!-- 안여백 60px span은 모든 인라인요소 묶을수 잇음  -->
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>파리 - Hotel Plaza Athenee</strong>				
+															<em>2019.08.01</em>
+															<small>by. Nancy CHOI</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>
+									<li class="sec4Slide sec4Slide4"> <!--1570px/3 = 슬라이드1개 너비 - (margin)와 높이: 설정 -->
+										<div> <!-- margin:0 20 -->
+											<div class="sec4Slide-content">
+												<a href="javascript:" class="sec4SlideBt">
+													<span> 
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>캄보디아의 - Alila Koh russey</strong>				
+															<em>2019.07.10</em>
+															<small>by. Bonnie HAN</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>
+									<li class="sec4Slide sec4Slide5"> <!--1570px/3 = 슬라이드1개 너비 - (margin)와 높이: 설정 -->
+										<div> <!-- margin:0 20 -->
+											<div class="sec4Slide-content">
+												<a href="javascript:" class="sec4SlideBt">
+													<span>
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>Travlelog</strong>				
+															<em>2019.07.10</em>
+															<small>by. Marianne SUH</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>
+									<li class="sec4Slide sec4Slide1"> <!--1570px/3 = 슬라이드1개 너비 - (margin)와 높이: 설정 -->
+										<div> <!-- margin:0 20 -->
+											<div class="sec4Slide-content">
+												<a href="javascript:" class="sec4SlideBt">
+													<span>
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>크레타 섬 의 Abaton Island Resort & Spa</strong>				
+															<em>2019.07.02</em>
+															<small>by. Jenna CHOI</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>
+									<li class="sec4Slide sec4Slide2"> <!--1570px/3 = 슬라이드1개 너비 - (margin)와 높이: 설정 -->
+										<div> <!-- margin:0 20 -->
+											<div class="sec4Slide-content">
+												<a href="javascript:" class="sec4SlideBt">
+													<span>
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>스코틀랜드 - The Fife Arms</strong>				
+															<em>2019.07.02</em>
+															<small>by. Eunice KIM</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>
+									<li class="sec4Slide sec4Slide3"> <!--1570px/3 = 슬라이드1개 너비 - (margin)와 높이: 설정 -->
+										<div> <!-- margin:0 20 -->
+											<div class="sec4Slide-content">
+												<a href="javascript:" class="sec4SlideBt">
+													<span>
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>스위스 몽트뢰의 Clinique La Prairie</strong>				
+															<em>2019.06.27</em>
+															<small>by. Nancy CHOI</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>
+									<li class="sec4Slide sec4Slide4"> <!--1570px/3 = 슬라이드1개 너비 - (margin)와 높이: 설정 -->
+										<div> <!-- margin:0 20 -->
+											<div class="sec4Slide-content">
+												<a href="javascript:" class="sec4SlideBt">
+													<span>
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>파리 - Hotel Plaza Athenee</strong>				
+															<em>2019.08.01</em>
+															<small>by. Nancy CHOI</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>
+									<li class="sec4Slide sec4Slide5"> <!--1570px/3 = 슬라이드1개 너비 - (margin)와 높이: 설정 -->
+										<div> <!-- margin:0 20 -->
+											<div class="sec4Slide-content">
+												<a href="javascript:" class="sec4SlideBt">
+													<span>
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>캄보디아의 - Alila Koh russey</strong>				
+															<em>2019.07.10</em>
+															<small>by. Bonnie HAN</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>
+									<li class="sec4Slide sec4Slide0"> <!--1570px/3 = 슬라이드1개 너비 - (margin)와 높이: 설정 -->
+										<div> <!-- margin:0 20 -->
+											<div class="sec4Slide-content">
+												<a href="javascript:" class="sec4SlideBt">
+													<span>
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>Travlelog</strong>				
+															<em>2019.07.10</em>
+															<small>by. Marianne SUH</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>
+									<li class="sec4Slide sec4Slide1"> <!--1570px/3 = 슬라이드1개 너비 - (margin)와 높이: 설정 -->
+										<div> <!-- margin:0 20 -->
+											<div class="sec4Slide-content">
+												<a href="javascript:" class="sec4SlideBt">
+													<span>
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>크레타 섬 의 Abaton Island Resort & Spa</strong>				
+															<em>2019.07.02</em>
+															<small>by. Jenna CHOI</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>
+									<li class="sec4Slide sec4Slide2"> <!--1570px/3 = 슬라이드1개 너비 - (margin)와 높이: 설정 -->
+										<div> <!-- margin:0 20 -->
+											<div class="sec4Slide-content">
+												<a href="javascript:" class="sec4SlideBt">
+													<span>
+													
+														<!-- 1. 이미지 박스 216 216 -->
+														<span class="sec4Slide-image">
+															<span class="sec4Slide-bg">
+											
+															</span>
+														</span>
+														
+														<!-- 2. 텍스트 박스 -->
+														<span class="sec4Slide-text">
+															<strong>스코틀랜드 - The Fife Arms</strong>				
+															<em>2019.07.02</em>
+															<small>by. Eunice KIM</small>
+														</span>
+														
+														<!-- 3. 애니메이션 박스 라인4개 -->
+														<span class="sec4Slide-animation">
+															<i class="sec4Slide-ani-line sec4Slide-ani-line0"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line1"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line2"></i>
+															<i class="sec4Slide-ani-line sec4Slide-ani-line3"></i>
+														</span>
+														
+													</span>
+												</a>
+											</div>											
+										</div>
+									</li>									
+								</ul>
+							</div>
+						</div>
+						 <!-- 섹션4 슬라이드 페이지버튼 박스 -->
+						<div class="section4-slide-page-wrap">
+							<ul>
+								<li><a href="javascript:" class="sec4PageBt blind addsec4PageBtn">페이지버튼</a></li>
+								<li><a href="javascript:" class="sec4PageBt blind">페이지버튼</a></li>
+								<li><a href="javascript:" class="sec4PageBt blind">페이지버튼</a></li>
+								<li><a href="javascript:" class="sec4PageBt blind">페이지버튼</a></li>
+								<li><a href="javascript:" class="sec4PageBt blind">페이지버튼</a></li>
+								<li><a href="javascript:" class="sec4PageBt blind">페이지버튼</a></li>
+							</ul>
+						</div>
+						
+						
+					</div>
+					
+				</div>				
+			</div>
+		</section>	
+		<!-- #section4 -->
+	</main>
+	<!-- #main -->
+	
+	
+	<footer id="footer">
+	
+			<div class="footer-Row1"> <!-- width:100% bg white -->
+				<div><!-- 1580 -->
+					<div><!--  margin:0 25px -->
+						<div><!--  width:100%(1530) -->
+							<ul class="fixedclear"> 
+								<li><a href="#"><img src="img/collection_logo1_gray.png" alt="footer_C_logo1_gray"></a></li>
+								<li><a href="#"><img src="img/collection_logo2_gray.png" alt="footer_C_logo2_gray"></a></li>
+								<li><a href="#"><img src="img/collection_logo3_gray.png" alt="footer_C_logo3_gray"></a></li>
+								<li><a href="#"><img src="img/collection_logo4_gray.png" alt="footer_C_logo4_gray"></a></li>
+								<li><a href="#"><img src="img/collection_logo5_gray.png" alt="footer_C_logo5_gray"></a></li>
+								<li><a href="#"><img src="img/collection_logo6_gray.png" alt="footer_C_logo6_gray"></a></li>
+							</ul>						
+						</div>					
+					</div>
+				</div>				
+			</div>
+			<!-- #footer-Row1 -->
+			
+			<div class="footer-Row2"><!-- width:100% bg dark gray -->
+				<div class="footer-Row2-wrap"> <!-- 1580 -->
+					<div ><!-- margin:0 25px  -->
+						<div class="footer-Row2-container"><!-- width:100%(1530)  -->
+							<ul class="fixedclear">
+								<li>
+									<div>
+										<img src="img/logo_white.png" alt="f_logo_white">
+									</div>
+								</li>
+								
+								<li>
+									<div class="footer-row2-row1">
+									
+										<div class="footer-row2-row1-left  fixedclear">
+											<ul >
+												<li><a href="#"><span>About Us</span></a></li>
+												<li><a href="#"><span>Contact Us</span></a></li>
+												<li><a href="#"><span>Privacy Policy</span></a></li>
+											</ul>
+										</div>
+										
+										<div class="footer-row2-row1-right  fixedclear">
+											<ul>
+												<li><a href="#"><img src="img/naver_logo.png" alt="naver_logo"></a></li>
+												<li><a href="#"><img src="img/insta_logo.png" alt="insta_logo"></a></li>								
+											</ul>							
+										</div>						
+									</div>
+									<!-- #footer-row2-row1 -->
+									<div class="footer-row2-row2">
+										<address class="address">
+											<ul class=" fixedclear">
+												<li><a href="#">(주)엠오알아이피</a></li>
+												<li><a href="#">대표자 : 서현석</a></li>
+												<li><a href="#">사엄자등록번호 : 727-87-00810</a></li>
+												<li><a href="#">주소 : 서울특별시 강남구 학동로 520, 5층 (삼성동, 삼예빌딩) / +82(0)2 516 6011</a></li>
+												<li><a href="#" class="menu-b-down">&copy; Copyright by morip. All rights reserved.</a></li>
+											</ul>
+										</address>
+									</div>
+									<!-- #footer-row2-row2 -->								
+								</li>								
+							</ul>
+						</div>
+					</div>					
+				</div>
+			</div>
+				<!-- #footer-Row2 -->
+	</footer>
+	<!-- #footer -->
+	
+</div>
+</body>
+</html>
+
+
+
+
